@@ -89,6 +89,7 @@
           </div>
         </div>
       </div>
+      <span class="skills-other"> {{person.knowledge}} </span>
     </div>
   </div>
 
@@ -103,9 +104,7 @@
       <div class="block-helper"></div>
       <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
         <div class="subheadline">{{experience.timeperiod}}</div>
-        <p class="info">
-          {{experience.description}}
-        </p>
+        <p class="info" v-html="experience.description"></p>
     </div>
 
     <div class="section-headline">{{ lang.project }}</div>
@@ -167,7 +166,7 @@ a {
 .title {
   right:25px;
   padding-left:20px;
-  padding-top:20px;
+  padding-top:55px;
   bottom:25px;
   h2 {
     text-transform:uppercase;
@@ -200,7 +199,7 @@ a {
     display:block;
     font-size:0.67em;
     font-size:10pt;
-    -webkit-margin-before:2.33em;
+    -webkit-margin-before:2em;
     -webkit-margin-start:0;
     -webkit-margin-end:0;
     padding-top:0;
@@ -303,7 +302,7 @@ h4 {
       font-size:14px;
       color:rgba(0,0,0,0.870588);
       margin-bottom:0;
-      padding-top:20px;
+      padding-top:15px;
     }
     .icon {
       width:16%;
@@ -464,5 +463,11 @@ h4 {
 #githubIcon {
   width:25px;
   padding-left:17px;
+}
+
+.skills-other {
+  clear: both;
+  display: block;
+  margin: 20px;
 }
 </style>

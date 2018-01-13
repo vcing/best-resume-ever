@@ -18,12 +18,13 @@ experience:
 - company: 阿里外包团队前端负责人&架构师
   position: 武汉佰钧成技术有限责任公司
   timeperiod: 2017.10 - 至今
-  description: 基于react和dva前端架构方案，主导了物业管理系统APP前端部分和门店邮局系统的前端开发工作。
+  description: 基于react和dva前端架构方案，主导了物业管理系统APP前端部分和门店邮局系统的前端开发工作。<br />
+              推动了React以及Redux数据流等多项技术在团队内大规模使用。
 
 - company: 技术负责人
   position: 游七七网络科技有限责任公司
   timeperiod: 2014.10 - 2017.10
-  description: U77技术负责人，主导u77.com网站的所有开发工作。
+  description: U77技术负责人，主导u77.com网站的所有开发工作。<br />
               基于Express重构了PHP后端，搭建了U77的后台管理系统，支付平台，游戏对接平台，论坛系统等多个项目。
   
 project:
@@ -37,8 +38,13 @@ project:
 - name : 门店邮局
   keywords: React, Redux, Redux-Saga, React-Router, Ant Design
   description: 作为前端架构师采用React和Dva框架(Redux,Redux-saga,React-Router)构建了门店邮局的前台首页H5页面和后台管理系统。<br />
-              在项目过程中学习了Dva的源码和理念，并给Dva开源库提交了一些文档BUG修复的PR。
+              在项目过程中学习了Dva的源码和理念，并给Dva开源库提交了一些文档BUG修复的PR。<br />
               成功的推进了Dva框架这套解决方案作为目前团队前端开发的主要技术。
+
+- name : U77支付系统NodeJS后端
+  keywords: Leancloud, Node.js, Express
+  description: 基于Leancloud BaaS开发的支付系统，通过restful接口给后台提供相关数据和操作。
+              基于NoSQL搭建的数据模型，拥有独立完整的日志系统，ACL权限控制，备份系统，异常诊断，报警机制等功能。
 
 - name : U77全站重构
   keywords: 'Node.js, Express, MongoDB, Mysql, websocket, Webpack, ES next'
@@ -51,15 +57,6 @@ project:
               使用MongoDB和MySql的两台数据库分别处理不同的逻辑。 
               在MongoDB中加入了完整的日志系统，记录下了用户的所有操作，实时反馈到后台系统给与到产品和运营跟踪分析用户行为。<br />
               采用Leancloud的websocket实时通讯模块构建了网站的消息系统，实现了从消息提醒到问题反馈，在线客服等多个高实时性要求的业务需求。
-
-- name : U77支付系统NodeJS后端
-  keywords: Leancloud, Node.js, Express
-  description: 基于Leancloud BaaS开发的支付系统，通过restful接口给后台提供相关数据和操作。
-              基于NoSQL搭建的数据模型，拥有独立完整的日志系统，ACL权限控制，备份系统，异常诊断，报警机制等功能。
-
-- name : U77后台管理系统
-  keywords: AngularJS
-  description: 独立完成的U77后台管理系统的重写,采用了AngularJS(v1.46)作为前端框架。使用了restful风格重新设计了后台数据接口。 
 
 education:
 - degree: 武汉大学东湖分校
@@ -90,7 +87,7 @@ skills:
   level: 70
 - name: Linux
   level: 50
-knowledge: 雅思 6分.
+knowledge: 英语 :雅思 6分.
 
 contact:
   email: vcing@foxmail.com
