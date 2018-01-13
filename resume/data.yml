@@ -1,70 +1,104 @@
 /* #*/ export const PERSON = `
 name:
-  first: John
+  first: 谭毅
   middle:
-  last: Doe
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
+  last: 
+about: 从中学时代自学编程，先后尝试过Delphi，Java，PHP，Python等多门语言。
+      最终选择了以JS为核心，不断丰富自己的开发经验，沉淀自己的编程技术。<br />
+      大学的电信专业，使我对网络架构有了清晰的认识，并基于此学习了从HTTP协议到Nginx,Linux服务器再到后端数据库等多个构建网站服务所需的基本技能。<br />
+      毕业后U77又给我了一个更大的舞台，夯实了自己的各项基础。同时也将JS及其生态圈中各种各样的前沿技术应用到了网站中，赋予了一个传统游戏网站更多的活力。<br />
+      在之后的工作中，也希望能够有更多的机会展示自己的才能，推动JS生态圈的发展，去其糟粕，取其精华，在工作实践中给公司带来更大的空间。
+position: 前端架构师/JS全栈工程师
 
 birth:
-  year: 1990
-  location: New York
+  year: 1992
+  location: 武汉
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
+- company: 阿里外包团队前端负责人&架构师
+  position: 武汉佰钧成技术有限责任公司
+  timeperiod: 2017.10 - 至今
+  description: 基于react和dva前端架构方案，主导了物业管理系统APP前端部分和门店邮局系统的前端开发工作。
 
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
+- company: 技术负责人
+  position: 游七七网络科技有限责任公司
+  timeperiod: 2014.10 - 2017.10
+  description: U77技术负责人，主导u77.com网站的所有开发工作。
+              基于Express重构了PHP后端，搭建了U77的后台管理系统，支付平台，游戏对接平台，论坛系统等多个项目。
+  
+project:
+- name : 物业管理系统
+  keywords: React, Redux, Redux-Saga, React-Router, Ant Design, react-virtualized
+  description: 推动PD和PM采用React前端开发，从原本的纯原生开发方案接手了90%的业务逻辑。<br />
+              使用react-virtualized库大幅度优化了大数据列表页的性能问题。<br />
+              改进了pulltorefresh.js库，成功移植进react项目，并支持了更多功能(单独开源项目计划中)。<br />
+              改造了接口层，通过后端提供的接口文档自动生成可以直接传参调用的前端接口。
 
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+- name : 门店邮局
+  keywords: React, Redux, Redux-Saga, React-Router, Ant Design
+  description: 作为前端架构师采用React和Dva框架(Redux,Redux-saga,React-Router)构建了门店邮局的前台首页H5页面和后台管理系统。<br />
+              在项目过程中学习了Dva的源码和理念，并给Dva开源库提交了一些文档BUG修复的PR。
+              成功的推进了Dva框架这套解决方案作为目前团队前端开发的主要技术。
+
+- name : U77全站重构
+  keywords: 'Node.js, Express, MongoDB, Mysql, websocket, Webpack, ES next'
+  description: 前端部分:<br />
+              EJS模板引擎渲染前端页面，webpack打包每个页面所需要的特定JS模块。
+              前端JS模块通过Babel转码全部采用ES6和部分ES7标准编写，使用SASS作为css预处理。
+              所有静态文件通过又拍云回源CDN加速。<br /><br />
+              后端部分:<br />
+              使用Node.js和Express框架全面重构了U77网站的后端部分。<br />重构了数据模型，剔除了冗余数据和已废弃的业务逻辑。
+              使用MongoDB和MySql的两台数据库分别处理不同的逻辑。 
+              在MongoDB中加入了完整的日志系统，记录下了用户的所有操作，实时反馈到后台系统给与到产品和运营跟踪分析用户行为。<br />
+              采用Leancloud的websocket实时通讯模块构建了网站的消息系统，实现了从消息提醒到问题反馈，在线客服等多个高实时性要求的业务需求。
+
+- name : U77支付系统NodeJS后端
+  keywords: Leancloud, Node.js, Express
+  description: 基于Leancloud BaaS开发的支付系统，通过restful接口给后台提供相关数据和操作。
+              基于NoSQL搭建的数据模型，拥有独立完整的日志系统，ACL权限控制，备份系统，异常诊断，报警机制等功能。
+
+- name : U77后台管理系统
+  keywords: AngularJS
+  description: 独立完成的U77后台管理系统的重写,采用了AngularJS(v1.46)作为前端框架。使用了restful风格重新设计了后台数据接口。 
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: 武汉大学东湖分校
+  timeperiod: 2010.9 - 2013.6
+  description: 电子信息工程技术，专科
 
 # skill level goes 0 to 100
 skills:
-- name: HTML5
-  level: 99
-- name: CSS3
-  level: 95
 - name: JavaScript
-  level: 97
-- name: Node.js
-  level: 93
-- name: Angular 2
-  level: 60
-- name: TypeScript
-  level: 80
+  level: 96
 - name: ES.Next
+  level: 86
+- name: HTML5
+  level: 90
+- name: CSS3
+  level: 88
+- name: React
+  level: 82
+- name: Node.js
+  level: 85
+- name: Express
+  level: 80
+- name: MongoDB
   level: 70
-- name: Docker
-  level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+- name: MySQL
+  level: 60
+- name: Nginx
+  level: 70
+- name: Linux
+  level: 50
+knowledge: 雅思 6分.
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: vcing@foxmail.com
+  phone: 13437287560
+  street: 余杭区 赛银国际广场
+  # city: 杭州
+  # website: johndoe.com
+  github: vcing
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
-lang: en
+lang: cn
 `

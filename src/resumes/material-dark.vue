@@ -107,6 +107,15 @@
           {{experience.description}}
         </p>
     </div>
+
+    <div class="section-headline">{{ lang.project }}</div>
+    <div class="block" v-for="project in person.project" :key="project.name">
+      <div class="block-helper"></div>
+      <h3 class="headline">{{project.name}}</h3>
+        <div class="subheadline">{{project.keywords}}</div>
+        <p class="info" v-html="project.description"></p>
+    </div>
+
     <div class="section-headline">{{ lang.education }}</div>
     <div class="block" v-for="education in person.education" :key="education.degree">
       <div class="block-helper"></div>
@@ -114,6 +123,16 @@
       <p class="info">
         {{education.timeperiod}}, {{education.description}}
       </p>
+    </div>
+
+    <div class="section-headline">{{ lang.about }}</div>
+    <div class="block">
+      <div class="block-helper"></div>
+      <!-- <h3 class="headline">{{experience.position}} - {{experience.company}}</h3> -->
+        <!-- <div class="subheadline">{{experience.timeperiod}}</div> -->
+        <p class="info" v-html="person.about">
+          
+        </p>
     </div>
   </div>
 
