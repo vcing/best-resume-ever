@@ -3,21 +3,31 @@ name:
   first: 谭毅
   middle:
   last: 
-about: 从中学时代自学编程，先后尝试过Delphi，Java，PHP，Python等多门语言。
-      最终选择了以JS为核心，不断丰富自己的开发经验，沉淀自己的编程技术。<br />
-      大学的电信专业，使我对网络架构有了清晰的认识，并基于此学习了从HTTP协议到Nginx,Linux服务器再到后端数据库等多个构建网站服务所需的基本技能。<br />
+about: 从中学时代自学编程，先后尝试过Delphi，Lua，PHP，Python等多门语言。
+      最终选择了以实践为核心，不断丰富自己的开发经验，沉淀自己的编程技术。<br />
+      大学的电信专业，使我对网络架构有了清晰的认识，并基于此学习了从HTTP协议到Nginx,Linux服务器再到后端数据库等多个构建网络服务所需的基本技能。<br />
       毕业后U77又给我了一个更大的舞台，夯实了自己的各项基础。同时也将JS及其生态圈中各种各样的前沿技术应用到了网站中，赋予了一个传统游戏网站更多的活力。<br />
-      在之后的工作中，也希望能够有更多的机会展示自己的才能，推动JS生态圈的发展，去其糟粕，取其精华，在工作实践中给公司带来更大的空间。
-position: 前端架构师/JS全栈工程师
+      R2.ai 让我第一次接触到了机器学习，由此对算法也产生了浓厚的兴趣。在空闲之余，也会尝试去LeetCode刷题，欣赏他人的精妙解法。<br />
+      使我更加感受到就算最简单的业务代码，也存在非常大的优化空间。由此在工作中不断提升自己的代码质量，尝试更优解法。<br />
+      在之后的工作中，也希望能够有更多的机会展示自己的才能，在工作实践中给公司带来更大的空间。
+position: 前端工程师/全栈工程师
 
 birth:
   year: 1992
   location: 武汉
 
 experience:
+- company: 全栈工程师
+  position: 杭州锐拓智能科技有限公司
+  timeperiod: 2018.3 - 2019.9
+  description: 负责R2 Learn产品用户端的研发，主导 R2 Learn 2.0 版本用户端和技术选型和重构。<br />
+              与此同时，作为项目技术对接人参与了公司与多家金融，医疗领域客户的对接工作。<br />
+              后期与数据科学部门配合，独立完成了产品ETL模块的分离解耦工作。<br />
+              基于ElasticSearch独立研发了新的ETL模块，显著改善了数据科学部门的工作流程与数据处理的资源占用。
+
 - company: 阿里外包团队前端负责人&架构师
   position: 武汉佰钧成技术有限责任公司
-  timeperiod: 2017.10 - 至今
+  timeperiod: 2017.10 - 2018.3
   description: 基于react和dva前端架构方案，主导了物业管理系统APP前端部分和门店邮局系统的前端开发工作。<br />
               推动了React以及Redux数据流等多项技术在团队内大规模使用。
 
@@ -28,26 +38,37 @@ experience:
               基于Express重构了PHP后端，搭建了U77的后台管理系统，支付平台，游戏对接平台，论坛系统等多个项目。
   
 project:
-- name : 物业管理系统
-  keywords: React, Redux, Redux-Saga, React-Router, Ant Design, react-virtualized
-  description: 推动PD和PM采用React前端开发，从原本的纯原生开发方案接手了90%的业务逻辑。<br />
-              使用react-virtualized库大幅度优化了大数据列表页的性能问题。<br />
-              改进了pulltorefresh.js库，成功移植进react项目，并支持了更多功能(单独开源项目计划中)。<br />
-              改造了接口层，通过后端提供的接口文档自动生成可以直接传参调用的前端接口。
+- name : R2 Learn ETL模块
+  keywords: ElasticSearch
+  description: 产品的之前版本中, ETL部分由模型训练的Python脚本进行处理，会将全部数据读取后再进行统计计算和相应的数据修复，极大占用资源<br />
+              充分验证可行性后主动向CTO建议将ETL模块剥离，并使用ElasticSearch进行存储和计算。<br />
+              通过分析ES的Machine Learning模块ETL部分源码后，制定了产品ETL标准接口。由我独立完成ES版本的研发，数据科学团队的同事进行python版本的重构<br />
+              得益于ES数据库插入数据时建立索引的特性，数据上传完成后几乎可以立即得到数据的统计信息，再通过reindex API进行数据清洗。<br />
+              模块化后的ETL可以独立运行，根据用户数据大小和特征任意切换后端实现，满足了我们产品在SaaS平台和客户安装版的不同要求。
 
-- name : 门店邮局
-  keywords: React, Redux, Redux-Saga, React-Router, Ant Design
-  description: 作为前端架构师采用React和Dva框架(Redux,Redux-saga,React-Router)构建了门店邮局的前台首页H5页面和后台管理系统。<br />
+- name : R2 Learn 2.0 客户部署安装
+  keywords: 
+  description: 先后参与过与浙商银行，江苏银行，平安医疗，信雅达，四川税务局等多家单位的产品对接与部署工作。<br />
+              针对不同单位的不同环境配置和安全要求制定适合的部署方案和打包流程，并与客户方技术人员进行对接，协商运维方案。<br />
+              除了提供基本操作手册外，也会进行基础操作培训。同时收集客户的意见，及时改善产品缺陷，优化体验。
+
+- name : R2 Learn 2.0
+  keywords: React, Mobx, Websocket, Express, Redis
+  description: 负责前后端基础搭建，模型部署部分开发，与科学计算团队协商设计接口等。<br />
+              由于项目前端实时性要求高，所以所有通讯都基于Websocket，并且设计实现了整套基于Websocket的接口层。<br />
+              使用Redis作为分布式架构统一的数据处理与推送。使用Redis队列与模型训练部署模块进行通讯和推送。<br />
+              推动容器化管理作为部署方案，完善了发布与部署流程与相应文档。
+
+- name : 门店邮局&物业管理系统
+  keywords: DVA全家桶
+  description: 作为前端架构师采用React和Dva框架(Redux,Redux-saga,React-Router)构建了项目的前台首页H5页面和后台管理系统。<br />
+              推动PD和PM采用React前端开发，从原本的纯原生开发方案接手了90%的业务逻辑。<br />
+              使用react-virtualized库大幅度优化了大数据列表页的性能问题。<br />
               在项目过程中学习了Dva的源码和理念，并给Dva开源库提交了一些文档BUG修复的PR。<br />
               成功的推进了Dva框架这套解决方案作为目前团队前端开发的主要技术。
 
-- name : U77支付系统NodeJS后端
-  keywords: Leancloud, Node.js, Express
-  description: 基于Leancloud BaaS开发的支付系统，通过restful接口给后台提供相关数据和操作。
-              基于NoSQL搭建的数据模型，拥有独立完整的日志系统，ACL权限控制，备份系统，异常诊断，报警机制等功能。
-
 - name : U77全站重构
-  keywords: 'Node.js, Express, MongoDB, Mysql, websocket, Webpack, ES next'
+  keywords: Express, MongoDB, Mysql, Websocket
   description: 前端部分:<br />
               EJS模板引擎渲染前端页面，webpack打包每个页面所需要的特定JS模块。
               前端JS模块通过Babel转码全部采用ES6和部分ES7标准编写，使用SASS作为css预处理。
@@ -67,8 +88,6 @@ education:
 skills:
 - name: JavaScript
   level: 96
-- name: ES.Next
-  level: 86
 - name: HTML5
   level: 90
 - name: CSS3
@@ -79,20 +98,24 @@ skills:
   level: 85
 - name: Express
   level: 80
+- name: Docker
+  level: 75
+- name: ElasticSearch
+  level: 70
 - name: MongoDB
   level: 70
 - name: MySQL
   level: 60
 - name: Nginx
-  level: 70
+  level: 60
 - name: Linux
-  level: 50
-knowledge: 英语 :雅思 6分.
+  level: 60
+# knowledge: 英语 :雅思 6分.
 
 contact:
   email: vcing@foxmail.com
   phone: 13437287560
-  street: 余杭区 赛银国际广场
+  street: 萧山区闻堰街道戈雅公寓秋云园15幢402
   # city: 杭州
   # website: johndoe.com
   github: vcing
